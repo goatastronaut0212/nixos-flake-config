@@ -10,6 +10,7 @@
     ./networking.nix
 
     # NixOS system config
+    ./desktop-environment.nix
     ./environment.nix
     ./fonts.nix
     ./insecure-pkgs.nix

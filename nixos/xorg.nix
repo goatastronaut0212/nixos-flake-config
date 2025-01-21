@@ -7,10 +7,6 @@
     # Enable the X11 window system
     enable = true;
     autorun = true;
-
-    desktopManager.mate = {
-      enable = true;
-    };
   };
 
   # touchpad support
