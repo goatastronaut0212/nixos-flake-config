@@ -19,6 +19,7 @@
     ./no-packages.nix
     #./steam.nix
     ./qtile.nix
+    ./windowmanager/wayfire.nix
 
     # Programs and services
     ./flatpak.nix
