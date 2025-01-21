@@ -31,7 +31,7 @@
 
       # Games
       pkgs.antimicrox
-      pkgs.unstable.minetest
+      pkgs.unstable.luanti
       pkgs.prismlauncher
 
       # Internet
