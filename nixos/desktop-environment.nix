@@ -1,12 +1,5 @@
-{ pkgs, ... }:
-
 {
-  services.xserver.desktopManager.mate = {
+  services.xserver.desktopManager.lxqt = {
     enable = true;
   };
-
-  environment.mate.excludePackages = [
-    pkgs.mate.mate-terminal
-    pkgs.mate.pluma
-  ];
 }
