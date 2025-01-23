@@ -10,7 +10,6 @@
     ./networking.nix
 
     # NixOS system config
-    ./desktop-environment.nix
     ./environment.nix
     ./fonts.nix
     ./insecure-pkgs.nix
@@ -23,7 +22,7 @@
 
     # Programs and services
     ./flatpak.nix
-    ./services/nm-applet.nix
+    ./services/zapret.nix
 
     ./fish.nix
 
