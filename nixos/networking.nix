@@ -7,7 +7,17 @@
       allowedTCPPorts = [ 8080 ];
       allowedUDPPorts = [ 8080 ];
     };
-    wireless.iwd.enable = true;
-    networkmanager.wifi.backend = "iwd";
+    networkmanager = {
+      enable = true;
+      dns = "none";
+    };
+    useDHCP = false;
+    dhcpcd.enable = false;
+    nameservers = [
+      "1.1.1.1"
+      "1.0.0.1"
+      "8.8.8.8"
+      "8.8.4.4"
+    ];
   };
 }
