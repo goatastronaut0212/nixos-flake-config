@@ -3,7 +3,7 @@
     enableIPv6 = true;
     hostName = "nixos";
     firewall = {
-      enable = true;
+      enable = false;
       allowedTCPPorts = [ 8080 ];
       allowedUDPPorts = [ 8080 ];
     };
