@@ -18,6 +18,7 @@
       # Development
       pkgs.dbeaver-bin
       pkgs.libreoffice
+      pkgs.krita
       inputs.nixvim.packages."${system}".default
       pkgs.unstable.vscode
       pkgs.jetbrains.idea-community-src
@@ -47,6 +48,10 @@
       pkgs.kid3
       pkgs.termusic
       pkgs.mpv
+      pkgs.vlc
+
+      # Tools
+      pkgs.gnome-network-displays
 
       # Ricing tools
       pkgs.eww
