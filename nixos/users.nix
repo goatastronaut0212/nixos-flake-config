@@ -1,5 +1,8 @@
 { pkgs, inputs, system, ... }:
 
+let
+  remotegamepad = pkgs.callPackage ../pkgs/remotegamepad.nix {};
+in
 {
   users.users.astronaut = {
     isNormalUser = true;
@@ -47,11 +50,11 @@
       # Media player
       pkgs.kid3
       pkgs.termusic
-      pkgs.mpv
       pkgs.vlc
 
       # Tools
       pkgs.gnome-network-displays
+      remotegamepad
 
       # Ricing tools
       pkgs.eww
