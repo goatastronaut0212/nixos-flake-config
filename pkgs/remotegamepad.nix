@@ -46,6 +46,8 @@ stdenv.mkDerivation {
     runHook preInstall
     install -m755 -D remotegamepad $out/bin/remotegamepad
 
+    cp -r notices $out/bin
+
     install -Dm644 icon.png $out/share/icons/hicolor/256x256/apps/remotegamepad.png
     runHook postInstall
   '';
