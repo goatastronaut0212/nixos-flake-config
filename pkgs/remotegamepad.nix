@@ -35,10 +35,9 @@ stdenv.mkDerivation {
       name = "Remote Gamepad";
       exec = "remotegamepad";
       icon = "remotegamepad";
-      desktopName = "remotegamepad";
+      desktopName = "Remote Gamepad";
       genericName = "Remote Gamepad";
       categories = [ "Game" ];
-      mimeTypes = [ "x-scheme-handler/remotegamepad" ];
       terminal = false;
     })
   ];
