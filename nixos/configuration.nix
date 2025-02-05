@@ -16,19 +16,20 @@
     ./input-method.nix
     ./nix-features.nix
     ./no-packages.nix
-    #./steam.nix
     ./qtile.nix
+    ./desktop-environment.nix
     ./windowmanager/sway.nix
 
     # Programs and services
     ./flatpak.nix
-    ./services/zapret.nix
+    ./steam.nix
+    ./services/blueman.nix
 
     ./fish.nix
 
     ./git.nix
 
-    ./nix-ld.nix
+    #./nix-ld.nix
 
     ./openssh.nix
 
@@ -58,9 +59,6 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.utf8";
-
-  # Enable blueman for bluetooth
-  services.blueman.enable = false;
 
   programs.light.enable = true;
 
