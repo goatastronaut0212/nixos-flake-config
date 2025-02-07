@@ -19,6 +19,7 @@ in
     ];
     packages = [
       # Development
+      pkgs.code-cursor
       pkgs.dbeaver-bin
       pkgs.libreoffice
       pkgs.krita
