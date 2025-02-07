@@ -18,6 +18,7 @@
     ./no-packages.nix
     ./qtile.nix
     ./desktop-environment.nix
+    ./virtualisation.nix
     ./windowmanager/sway.nix
 
     # Programs and services
@@ -32,17 +33,10 @@
     #./nix-ld.nix
 
     ./openssh.nix
-
-    ./virtualisation.nix
     ./xdg.nix
     ./xorg.nix
-
     ./users.nix
-
     ./tlp.nix # Power management
-
-    # Containers
-    ./docker.nix
   ];
 
   nixpkgs = {
