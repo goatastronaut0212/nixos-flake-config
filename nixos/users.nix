@@ -49,8 +49,8 @@ in
       pkgs.unstable.protonvpn-gui
 
       # Media player
+      pkgs.cmus
       pkgs.kid3
-      pkgs.termusic
       pkgs.vlc
 
       # Tools
