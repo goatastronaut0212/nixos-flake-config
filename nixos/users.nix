@@ -54,6 +54,7 @@ in
 
       # Tools
       pkgs.gnome-network-displays
+      pkgs.jq
       remotegamepad
 
       # Ricing tools
