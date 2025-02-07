@@ -57,7 +57,7 @@ in
       remotegamepad
 
       # Ricing tools
-      pkgs.eww
+      pkgs.unstable.eww
       pkgs.fastfetch    # System info terminal
       pkgs.fuzzel
       inputs.ghostty.packages."${system}".default
