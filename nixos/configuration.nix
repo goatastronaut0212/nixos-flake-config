@@ -25,6 +25,7 @@
     ./flatpak.nix
     ./steam.nix
     ./services/blueman.nix
+    ./services/playetctld.nix
 
     ./fish.nix
 
