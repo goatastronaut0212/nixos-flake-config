@@ -10,6 +10,10 @@
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
 
+    eww = {
+      url = "github:elkowar/eww";
+    };
+
     ghostty = {
       url = "github:ghostty-org/ghostty";
     };
@@ -32,6 +36,7 @@
     self,
     nixpkgs,
     nixpkgs-unstable,
+    eww,
     ghostty,
     home-manager,
     ibus-bamboo,
