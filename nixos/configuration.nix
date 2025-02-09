@@ -60,6 +60,4 @@
   services.gvfs.enable = true; # Mount, trash, and other functionalities
 
   system.stateVersion = "24.11";
-
-  services.teamviewer.enable = true;
 }
