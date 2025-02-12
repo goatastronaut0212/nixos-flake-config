@@ -20,6 +20,7 @@ in
     packages = [
       # Container development
       pkgs.kubernetes-helm
+      pkgs.kubectl
 
       # Development
       pkgs.code-cursor
