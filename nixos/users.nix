@@ -18,6 +18,9 @@ in
       "wheel"
     ];
     packages = [
+      # Container development
+      pkgs.kubernetes-helm
+
       # Development
       pkgs.code-cursor
       pkgs.dbeaver-bin
