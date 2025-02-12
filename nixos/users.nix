@@ -19,6 +19,7 @@ in
     ];
     packages = [
       # Container development
+      pkgs.awscli2
       pkgs.kubernetes-helm
       pkgs.kubectl
 
