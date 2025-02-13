@@ -16,10 +16,12 @@
     ./input-method.nix
     ./nix-features.nix
     ./no-packages.nix
-    ./qtile.nix
     ./desktop-environment.nix
     ./virtualisation.nix
+
+    # Window Manager
     ./windowmanager/sway.nix
+    ./windowmanager/qtile.nix
 
     # Programs and services
     ./flatpak.nix
