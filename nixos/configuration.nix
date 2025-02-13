@@ -23,11 +23,13 @@
     ./windowmanager/sway.nix
     ./windowmanager/qtile.nix
 
-    # Programs and services
+    # Services
     ./flatpak.nix
-    ./steam.nix
     ./services/blueman.nix
     ./services/playetctld.nix
+
+    # Programs
+    ./programs/steam.nix
 
     ./fish.nix
 
