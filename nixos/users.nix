@@ -25,6 +25,7 @@ in
 
       # Development
       pkgs.code-cursor
+      pkgs.blender
       pkgs.dbeaver-bin
       pkgs.libreoffice
       pkgs.krita
