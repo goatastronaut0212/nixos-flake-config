@@ -34,6 +34,7 @@ in
       pkgs.jetbrains.idea-community-src
       pkgs.jetbrains.pycharm-community-src
       pkgs.obs-studio
+      pkgs.temporal
 
       # Language
       pkgs.unstable.go
