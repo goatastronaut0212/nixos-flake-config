@@ -14,10 +14,6 @@
       url = "github:elkowar/eww";
     };
 
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -37,7 +33,6 @@
     nixpkgs,
     nixpkgs-unstable,
     eww,
-    ghostty,
     home-manager,
     ibus-bamboo,
     nixvim

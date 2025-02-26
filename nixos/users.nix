@@ -70,7 +70,6 @@ in
       inputs.eww.packages."${system}".default
       pkgs.fastfetch    # System info terminal
       pkgs.fuzzel
-      inputs.ghostty.packages."${system}".default
       pkgs.lsd          # ls written in Rust with icons
       pkgs.rofi
       pkgs.powerline-go # for status in fish shell
