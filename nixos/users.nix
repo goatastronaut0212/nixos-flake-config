@@ -31,8 +31,6 @@ in
       pkgs.krita
       inputs.nixvim.packages."${system}".default
       pkgs.unstable.vscode
-      pkgs.jetbrains.idea-community-src
-      pkgs.jetbrains.pycharm-community-src
       pkgs.obs-studio
       pkgs.temporal
 
