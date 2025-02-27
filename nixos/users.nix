@@ -54,6 +54,7 @@ in
       pkgs.microsoft-edge
       pkgs.transmission_4-gtk
       pkgs.unstable.protonvpn-gui
+      pkgs.qutebrowser
 
       # Media player
       pkgs.cmus
