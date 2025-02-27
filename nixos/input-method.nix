@@ -1,14 +1,11 @@
-{ inputs, system, ... }:
+{ pkgs, ... }:
 
-let
-  bamboo = inputs.ibus-bamboo.packages."${system}".default;
-in
 {
   i18n.inputMethod = {
     enable = true;
-    type = "ibus";
-    ibus.engines = [
-      bamboo
+    type = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-bamboo
     ];
   };
 }

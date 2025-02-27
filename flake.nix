@@ -19,10 +19,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ibus-bamboo = {
-      url = "github:BambooEngine/ibus-bamboo";
-    };
-
     nixvim = {
       url = "github:goatastronaut0212/nixvim-flake-config";
     };
@@ -34,7 +30,6 @@
     nixpkgs-unstable,
     eww,
     home-manager,
-    ibus-bamboo,
     nixvim
   }@inputs:
     let
