@@ -115,24 +115,6 @@
         "type": "github"
       }
     },
-    "ibus-bamboo": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_2"
-      },
-      "locked": {
-        "lastModified": 1737077323,
-        "narHash": "sha256-BC0mns0XbWaBxL0FWhmQF+M18kwjj9JHhog+a/wsQBU=",
-        "owner": "BambooEngine",
-        "repo": "ibus-bamboo",
-        "rev": "1ee8288509cd89ad255500929c7a19b90e379ef7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "BambooEngine",
-        "repo": "ibus-bamboo",
-        "type": "github"
-      }
-    },
     "ixx": {
       "inputs": {
         "flake-utils": [
@@ -209,22 +191,6 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1736701207,
-        "narHash": "sha256-jG/+MvjVY7SlTakzZ2fJ5dC3V1PrKKrUEOEE30jrOKA=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "ed4a395ea001367c1f13d34b1e01aa10290f67d6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
         "lastModified": 1740463929,
         "narHash": "sha256-4Xhu/3aUdCKeLfdteEHMegx5ooKQvwPHNkOgNCXQrvc=",
         "owner": "nixos",
@@ -239,7 +205,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1740367490,
         "narHash": "sha256-WGaHVAjcrv+Cun7zPlI41SerRtfknGQap281+AakSAw=",
@@ -255,7 +221,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_5": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1738797219,
         "narHash": "sha256-KRwX9Z1XavpgeSDVM/THdFd6uH8rNm/6R+7kIbGa+2s=",
@@ -274,7 +240,7 @@
     "nixvim": {
       "inputs": {
         "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_3",
         "nixvim": "nixvim_2"
       },
       "locked": {
@@ -294,7 +260,7 @@
     "nixvim_2": {
       "inputs": {
         "flake-parts": "flake-parts_2",
-        "nixpkgs": "nixpkgs_5",
+        "nixpkgs": "nixpkgs_4",
         "nuschtosSearch": "nuschtosSearch"
       },
       "locked": {
@@ -339,8 +305,7 @@
       "inputs": {
         "eww": "eww",
         "home-manager": "home-manager",
-        "ibus-bamboo": "ibus-bamboo",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nixvim": "nixvim"
       }
