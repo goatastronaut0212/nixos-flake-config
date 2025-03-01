@@ -62,6 +62,7 @@ in
       # Tools
       pkgs.gnome-network-displays
       pkgs.jq
+      pkgs.pcmanfm-qt
       pkgs.pulsemixer
       remotegamepad
 
@@ -71,6 +72,7 @@ in
       pkgs.fuzzel
       pkgs.lsd          # ls written in Rust with icons
       pkgs.rofi
+      pkgs.unstable.papirus-icon-theme
       pkgs.powerline-go # for status in fish shell
       pkgs.wezterm
 
