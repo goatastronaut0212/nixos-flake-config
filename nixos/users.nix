@@ -60,6 +60,7 @@ in
       pkgs.vlc
 
       # Tools
+      pkgs.bc
       pkgs.gnome-network-displays
       pkgs.jq
       pkgs.pcmanfm-qt
