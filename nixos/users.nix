@@ -30,28 +30,24 @@ in
       pkgs.libreoffice
       pkgs.krita
       inputs.nixvim.packages."${system}".default
-      pkgs.unstable.vscode
       pkgs.obs-studio
       pkgs.temporal
 
       # Language
-      pkgs.unstable.go
+      pkgs.go
       pkgs.openjdk21
       pkgs.nodejs
 
       # Games
       pkgs.antimicrox
-      pkgs.unstable.luanti
       pkgs.prismlauncher
 
       # Internet
-      pkgs.unstable.caprine
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
-      pkgs.firefox
       pkgs.microsoft-edge
       pkgs.transmission_4-gtk
-      pkgs.unstable.protonvpn-gui
+      pkgs.protonvpn-gui
       pkgs.qutebrowser
 
       # Media player
@@ -73,7 +69,7 @@ in
       pkgs.fuzzel
       pkgs.lsd          # ls written in Rust with icons
       pkgs.rofi
-      pkgs.unstable.papirus-icon-theme
+      pkgs.papirus-icon-theme
       pkgs.powerline-go # for status in fish shell
       pkgs.wezterm
 
