@@ -2,9 +2,11 @@
 
 {
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
-  hardware.pulseaudio.support32Bit = true;    ## If compatibility with 32-bit applications is desired.
-  hardware.pulseaudio.package = pkgs.pulseaudioFull;
+  services.pulseaudio = {
+    enable = false;
+    support32Bit = true;    ## If compatibility with 32-bit applications is desired.
+    package = pkgs.pulseaudioFull;
+  };
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;

@@ -1,18 +1,21 @@
 { inputs, ... }:
 
 {
+  /*
   unstable-packages = final: prev: {
     unstable = import inputs.nixpkgs-unstable {
       system = final.system;
       config.allowUnfree = true;
     };
   };
+  */
 
   #flake-packages = final: prev: {
     # Veloren
   #  inherit (inputs.veloren.packages."${final.system}") veloren-voxygen;
   #};
 
+  /*
   custom-packages = final: prev: {
     ibus = prev.ibus.overrideAttrs { withWayland = true; };
 
@@ -31,4 +34,5 @@
       '';
     };
   };
+  */
 }

@@ -9,8 +9,9 @@
     };
     networkmanager = {
       enable = true;
-      dns = "none";
+      wifi.backend = "iwd";
     };
+    wireless.iwd.enable = true;
     useDHCP = false;
     dhcpcd.enable = false;
     nameservers = [

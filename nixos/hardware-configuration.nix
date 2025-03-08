@@ -44,7 +44,7 @@
 
     enableRedistributableFirmware = false;
     enableAllFirmware = false;
-    firmware = with pkgs; [ ath9k-htc-blobless-firmware linux-firmware ];
+    firmware = with pkgs; [ linux-firmware ];
     graphics = {
       enable = true;
       enable32Bit = true;
