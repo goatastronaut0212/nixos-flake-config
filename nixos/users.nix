@@ -43,6 +43,7 @@ in
       pkgs.prismlauncher
 
       # Internet
+      pkgs.brave
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
       pkgs.microsoft-edge
