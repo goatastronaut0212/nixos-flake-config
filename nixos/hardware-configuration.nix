@@ -17,18 +17,18 @@
   };
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/09910999-c1e5-4794-a6ea-1338ef1711aa";
+    { device = "/dev/disk/by-uuid/e2db87c4-80eb-4633-b792-4faeb32b688a";
       fsType = "ext4";
     };
 
   fileSystems."/efi" =
-    { device = "/dev/disk/by-uuid/EDC4-E848";
+    { device = "/dev/disk/by-uuid/89DD-E643";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/18a9c5f4-657d-4f91-8da1-9080f8e8526d"; }
+    [ { device = "/dev/disk/by-uuid/c48bb07b-ac48-4e3f-aed6-141709373a8d"; }
     ];
 
   networking.useDHCP = lib.mkDefault true;
