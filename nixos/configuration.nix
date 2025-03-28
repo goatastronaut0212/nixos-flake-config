@@ -27,11 +27,11 @@
     ./flatpak.nix
     ./services/blueman.nix
     ./services/playetctld.nix
+    ./services/udev.nix
 
     # Programs
+    ./programs/fish.nix
     ./programs/steam.nix
-
-    ./fish.nix
 
     ./git.nix
 
@@ -46,8 +46,8 @@
 
   nixpkgs = {
     # Add overlays here
-    overlays =
-      [ ];
+    #overlays = [ outputs.overlays.custom-packages  ];
+    overlays = [ ];
 
     # Configure your nixpkgs instance
     config = { allowUnfree = true; };
@@ -63,5 +63,5 @@
 
   services.gvfs.enable = true; # Mount, trash, and other functionalities
 
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.05";
 }
