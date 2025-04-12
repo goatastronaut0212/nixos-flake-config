@@ -6,6 +6,9 @@
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
-    settings.auto-optimise-store = true;
+    settings = {
+      auto-optimise-store = true;
+      max-jobs = 2;
+    };
   };
 }
