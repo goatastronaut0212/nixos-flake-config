@@ -2,7 +2,7 @@
   boot.loader = {
     systemd-boot.enable = true;
     efi.canTouchEfiVariables = true;
-    efi.efiSysMountPoint = "/efi";
+    efi.efiSysMountPoint = "/boot/efi";
   };
 
   boot.supportedFilesystems = [ "ntfs" ];
