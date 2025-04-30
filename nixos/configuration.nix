@@ -22,6 +22,7 @@
     # Window Manager
     ./windowmanager/sway.nix
     ./windowmanager/qtile.nix
+    ./windowmanager/river.nix
 
     # Services
     ./flatpak.nix
@@ -35,7 +36,7 @@
 
     ./git.nix
 
-    #./nix-ld.nix
+    ./nix-ld.nix
 
     ./openssh.nix
     ./xdg.nix
@@ -46,7 +47,7 @@
 
   nixpkgs = {
     # Add overlays here
-    overlays = [ outputs.overlays.custom-packages  ];
+    overlays = [ outputs.overlays.custom-packages ];
 
     # Configure your nixpkgs instance
     config = { allowUnfree = true; };
