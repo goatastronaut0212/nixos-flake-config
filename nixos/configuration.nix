@@ -63,5 +63,5 @@
 
   services.gvfs.enable = true; # Mount, trash, and other functionalities
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "24.11";
 }

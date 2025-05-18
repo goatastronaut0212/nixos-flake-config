@@ -4,7 +4,7 @@
   fonts.packages = with pkgs; [
     barlow
     font-awesome
-    nerd-fonts.iosevka
+    (nerdfonts.override { fonts = [ "CascadiaCode" "JetBrainsMono" "Terminus" "Iosevka" ]; })
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji

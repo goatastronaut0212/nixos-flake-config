@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
+      url = "github:nixos/nixpkgs/nixos-24.11";
     };
 
     eww = {
@@ -37,7 +37,7 @@
 
       # NixOS configuration
       nixosConfigurations = {
-        nixos = nixpkgs.lib.nixosSystem {
+        nixos-dell = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs system; };
 
           modules = [

@@ -31,7 +31,7 @@
         owner = "goatastronaut0212";
         repo = "fcitx5-unikey";
         rev = "afdd52fbf3eb36784bab3f5ab61d04009c8ddedc";
-        hash = "sha256-h30JYLYtYvDgfXx7dgi258tzMDCjrL9yAAkJXkeW9zI=";
+        hash = "sha256-Em5B0qraOsqFu8o+2DoVo2YJUhLzZeRZCIEqoWhe89E=";
       };
     };
     /*

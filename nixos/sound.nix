@@ -2,7 +2,7 @@
 
 {
   # Enable sound with pipewire.
-  services.pulseaudio = {
+  hardware.pulseaudio = {
     enable = false;
     support32Bit = true;    ## If compatibility with 32-bit applications is desired.
     package = pkgs.pulseaudioFull;
