@@ -36,6 +36,7 @@
 
       # Tools
       pkgs.bc
+      pkgs.foot
       pkgs.jq
       pkgs.pulsemixer
       #remotegamepad
