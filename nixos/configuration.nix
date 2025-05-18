@@ -20,9 +20,7 @@
     ./virtualisation.nix
 
     # Window Manager
-    ./windowmanager/sway.nix
-    ./windowmanager/qtile.nix
-    ./windowmanager/river.nix
+    ./windowmanager/hyprland.nix
 
     # Services
     ./flatpak.nix
