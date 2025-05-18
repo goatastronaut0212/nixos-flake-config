@@ -28,6 +28,7 @@
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
       pkgs.microsoft-edge
+      pkgs.qutebrowser
 
       # Media player
       pkgs.cmus
