@@ -41,13 +41,13 @@
       #remotegamepad
 
       # Ricing tools
-      inputs.eww.packages."${system}".default
       pkgs.fastfetch    # System info terminal
       pkgs.fuzzel
       pkgs.lsd          # ls written in Rust with icons
       pkgs.rofi
       pkgs.papirus-icon-theme
       pkgs.powerline-go # for status in fish shell
+      pkgs.waybar
       pkgs.wezterm
 
       # Neovim setup
