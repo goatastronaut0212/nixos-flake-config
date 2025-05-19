@@ -6,10 +6,6 @@
       url = "github:nixos/nixpkgs/nixos-24.11";
     };
 
-    eww = {
-      url = "github:elkowar/eww";
-    };
-
     nixvim = {
       url = "github:goatastronaut0212/nixvim-flake-config";
     };
@@ -18,7 +14,6 @@
   outputs = {
     self,
     nixpkgs,
-    eww,
     nixvim
   }@inputs:
     let
