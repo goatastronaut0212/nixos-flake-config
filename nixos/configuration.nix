@@ -23,8 +23,8 @@
     ./windowmanager/hyprland.nix
 
     # Services
-    ./flatpak.nix
     ./services/blueman.nix
+    ./services/flatpak.nix
     ./services/playetctld.nix
     ./services/udev.nix
     ./services/openssh.nix
