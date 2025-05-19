@@ -31,9 +31,8 @@
 
     # Programs
     ./programs/fish.nix
+    ./programs/git.nix
     ./programs/steam.nix
-
-    ./git.nix
 
     ./nix-ld.nix
 
