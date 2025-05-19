@@ -27,6 +27,7 @@
     ./services/blueman.nix
     ./services/playetctld.nix
     ./services/udev.nix
+    ./services/openssh.nix
 
     # Programs
     ./programs/fish.nix
@@ -36,7 +37,6 @@
 
     ./nix-ld.nix
 
-    ./openssh.nix
     ./xdg.nix
     ./xorg.nix
     ./users.nix
