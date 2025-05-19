@@ -6,6 +6,10 @@
       url = "github:nixos/nixpkgs/nixos-24.11";
     };
 
+    ags = {
+      url = "github:aylur/ags";
+    };
+
     nixvim = {
       url = "github:goatastronaut0212/nixvim-flake-config";
     };
@@ -14,6 +18,7 @@
   outputs = {
     self,
     nixpkgs,
+    ags,
     nixvim
   }@inputs:
     let

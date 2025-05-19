@@ -42,6 +42,7 @@
       #remotegamepad
 
       # Ricing tools
+      inputs.ags.packages."${system}".agsFull
       pkgs.fastfetch    # System info terminal
       pkgs.fuzzel
       pkgs.lsd          # ls written in Rust with icons
