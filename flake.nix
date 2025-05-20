@@ -6,6 +6,10 @@
       url = "github:nixos/nixpkgs/nixos-24.11";
     };
 
+    nixpkgs-unstable = {
+      url = "github:nixos/nixpkgs/nixos-unstable";
+    };
+
     ags = {
       url = "github:aylur/ags";
     };
@@ -18,6 +22,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     ags,
     nixvim
   }@inputs:
@@ -31,14 +36,19 @@
         inherit system;
         config.allowUnfree = true;
       };
+
+      unstable-pkgs = import nixpkgs-unstable {
+        inherit system;
+        config.allowUnfree = true;
+      };
     in {
       # Custom packages and modifications, exported as overlays
-      overlays = import ./overlays { inherit inputs pkgs system; };
+      overlays = import ./overlays { inherit inputs pkgs unstable-pkgs system; };
 
       # NixOS configuration
       nixosConfigurations = {
         nixos-dell = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs outputs system; };
+          specialArgs = { inherit inputs outputs pkgs unstable-pkgs system; };
 
           modules = [
             # My configuration
