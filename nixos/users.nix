@@ -40,6 +40,7 @@
       pkgs.foot
       pkgs.jq
       pkgs.pulsemixer
+      pkgs.rofi
       #remotegamepad
 
       # Ricing tools
