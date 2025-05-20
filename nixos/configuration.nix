@@ -21,6 +21,7 @@
 
     # Window Manager
     ./windowmanager/hyprland.nix
+    ./windowmanager/leftwm.nix
 
     # Services
     ./services/blueman.nix
