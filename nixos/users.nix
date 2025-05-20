@@ -41,6 +41,7 @@
       pkgs.jq
       pkgs.pulsemixer
       pkgs.rofi
+      pkgs.pavucontrol
       #remotegamepad
 
       # Ricing tools
