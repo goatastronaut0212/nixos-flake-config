@@ -21,6 +21,7 @@
       # Development
       pkgs.code-cursor
       pkgs.dbeaver-bin
+      pkgs.drawio
       pkgs.krita
       inputs.nixvim.packages."${system}".default
 
