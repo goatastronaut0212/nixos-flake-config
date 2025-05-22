@@ -40,6 +40,7 @@
 
       # Tools
       pkgs.bc
+      pkgs.bottom
       pkgs.foot
       pkgs.jq
       pkgs.pulsemixer
