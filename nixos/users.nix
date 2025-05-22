@@ -25,6 +25,9 @@
       pkgs.krita
       inputs.nixvim.packages."${system}".default
 
+      # Games
+      pkgs.prismlauncher
+
       # Internet
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
