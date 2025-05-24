@@ -20,9 +20,7 @@
     ./virtualisation.nix
 
     # Window Manager
-    ./windowmanager/hyprland.nix
-    ./windowmanager/leftwm.nix
-    ./windowmanager/sway.nix
+    ./windowmanager/river.nix
 
     # Services
     ./services/blueman.nix
@@ -56,11 +54,11 @@
   time.timeZone = "Asia/Ho_Chi_Minh";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.utf8";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   programs.light.enable = true;
 
   services.gvfs.enable = true; # Mount, trash, and other functionalities
 
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.05";
 }

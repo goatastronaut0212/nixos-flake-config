@@ -1,4 +1,4 @@
-{ pkgs, inputs, system, ... }:
+{ pkgs, unstable-pkgs, inputs, system, ... }:
 
 #let
 #  remotegamepad = pkgs.callPackage ../pkgs/remotegamepad.nix {};
@@ -31,8 +31,8 @@
       # Internet
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
-      pkgs.microsoft-edge
       pkgs.qutebrowser
+      unstable-pkgs.protonvpn-gui
 
       # Media player
       pkgs.cmus
