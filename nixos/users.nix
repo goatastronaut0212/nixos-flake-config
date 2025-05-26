@@ -29,6 +29,7 @@
       pkgs.prismlauncher
 
       # Internet
+      unstable-pkgs.caprine
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
       pkgs.qutebrowser
@@ -41,11 +42,15 @@
       # Tools
       pkgs.bc
       pkgs.bottom
+      pkgs.flameshot
       pkgs.foot
       pkgs.jq
       pkgs.pulsemixer
       pkgs.rofi
       pkgs.pavucontrol
+      pkgs.networkmanagerapplet
+      pkgs.nwg-look
+      pkgs.pcmanfm-qt
       #remotegamepad
 
       # Ricing tools
