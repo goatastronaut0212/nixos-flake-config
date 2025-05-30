@@ -29,6 +29,7 @@
       pkgs.prismlauncher
 
       # Internet
+      pkgs.brave
       unstable-pkgs.caprine
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
@@ -50,7 +51,9 @@
       pkgs.pavucontrol
       pkgs.networkmanagerapplet
       pkgs.nwg-look
+      pkgs.mako
       pkgs.pcmanfm-qt
+      pkgs.swaybg
       #remotegamepad
 
       # Ricing tools
