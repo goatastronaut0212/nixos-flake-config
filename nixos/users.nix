@@ -45,6 +45,7 @@
       pkgs.bottom
       pkgs.flameshot
       pkgs.foot
+      inputs.ghostty.packages.${system}.default
       pkgs.jq
       pkgs.pulsemixer
       pkgs.rofi
