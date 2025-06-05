@@ -39,6 +39,7 @@
       # Media player
       pkgs.cmus
       pkgs.kid3
+      pkgs.vlc
 
       # Tools
       pkgs.bc
