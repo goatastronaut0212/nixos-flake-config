@@ -19,6 +19,7 @@
     ];
     packages = [
       # Development
+      pkgs.bruno
       pkgs.code-cursor
       pkgs.dbeaver-bin
       pkgs.drawio
