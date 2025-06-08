@@ -24,6 +24,7 @@
       pkgs.dbeaver-bin
       pkgs.drawio
       pkgs.krita
+      pkgs.libreoffice
       inputs.nixvim.packages."${system}".default
 
       # Games
