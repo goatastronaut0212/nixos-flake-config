@@ -23,6 +23,7 @@
       pkgs.code-cursor
       pkgs.dbeaver-bin
       pkgs.drawio
+      pkgs.joplin-desktop
       pkgs.krita
       pkgs.libreoffice
       inputs.nixvim.packages."${system}".default
@@ -44,6 +45,7 @@
       pkgs.vlc
 
       # Tools
+      pkgs.alacritty
       pkgs.bc
       pkgs.bottom
       pkgs.flameshot
