@@ -20,7 +20,7 @@
     packages = [
       # Development
       pkgs.bruno
-      pkgs.code-cursor
+      unstable-pkgs.code-cursor
       pkgs.dbeaver-bin
       pkgs.drawio
       pkgs.joplin-desktop
@@ -50,7 +50,6 @@
       pkgs.bottom
       pkgs.flameshot
       pkgs.foot
-      inputs.ghostty.packages.${system}.default
       pkgs.jq
       pkgs.pulsemixer
       pkgs.rofi

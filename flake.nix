@@ -14,10 +14,6 @@
       url = "github:aylur/ags";
     };
 
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-    };
-
     nixvim = {
       url = "github:goatastronaut0212/nixvim-flake-config";
     };
@@ -28,7 +24,6 @@
     nixpkgs,
     nixpkgs-unstable,
     ags,
-    ghostty,
     nixvim
   }@inputs:
     let
