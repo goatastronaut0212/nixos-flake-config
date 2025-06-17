@@ -20,6 +20,7 @@
     ./virtualisation.nix
 
     # Window Manager
+    ./windowmanager/sway.nix
     ./windowmanager/river.nix
 
     # Services
