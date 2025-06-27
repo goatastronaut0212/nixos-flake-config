@@ -58,8 +58,9 @@
       pkgs.nwg-look
       pkgs.mako
       pkgs.pcmanfm-qt
-      pkgs.swaybg
       #remotegamepad
+      pkgs.swww               # Image
+      pkgs.xwayland-satellite # For Xorg apps in niri
 
       # Ricing tools
       inputs.ags.packages."${system}".agsFull
