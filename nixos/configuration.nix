@@ -20,6 +20,8 @@
     ./virtualisation.nix
 
     # Window Manager
+    ./windowmanager/leftwm.nix
+    ./windowmanager/niri.nix
     ./windowmanager/sway.nix
     ./windowmanager/river.nix
 
