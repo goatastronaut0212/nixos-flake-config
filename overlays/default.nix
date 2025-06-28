@@ -5,18 +5,6 @@
   #};
 
   custom-packages = final: prev: {
-    fcitx5 = prev.fcitx5.overrideAttrs {
-      #nativeBuildInputs = prev.nativebuildInputs ++ [ prev.doxygen ]; 
-
-      cmakeFlags = [ 
-        "-DENABLE_DOC=On"
-      ];
-
-      postBuild = ''
-        make doc
-      '';
-    };
-
     fcitx5-unikey = prev.fcitx5-unikey.overrideAttrs {
       src = prev.fetchFromGitHub {
         owner = "goatastronaut0212";

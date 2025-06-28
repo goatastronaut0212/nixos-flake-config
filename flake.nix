@@ -32,23 +32,14 @@
       # Config settings
       system = "x86_64-linux";
 
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
-
       unstable-pkgs = import nixpkgs-unstable {
         inherit system;
         config.allowUnfree = true;
       };
     in {
-      # Custom packages and modifications, exported as overlays
-      overlays = import ./overlays { inherit inputs pkgs unstable-pkgs system; };
-
-      # NixOS configuration
       nixosConfigurations = {
         nixos-dell = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs outputs pkgs unstable-pkgs system; };
+          specialArgs = { inherit inputs outputs unstable-pkgs system; };
 
           modules = [
             # My configuration

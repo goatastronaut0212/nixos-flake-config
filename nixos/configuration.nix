@@ -46,9 +46,6 @@
   ];
 
   nixpkgs = {
-    # Add overlays here
-    overlays = [ outputs.overlays.custom-packages ];
-
     # Configure your nixpkgs instance
     config = { allowUnfree = true; };
   };
