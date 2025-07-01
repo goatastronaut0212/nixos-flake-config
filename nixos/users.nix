@@ -1,10 +1,58 @@
 { pkgs, unstable-pkgs, inputs, system, ... }:
 
-#let
-#  remotegamepad = pkgs.callPackage ../pkgs/remotegamepad.nix {};
-#in
 {
-  users.users.astronaut = {
+  users.users = {
+    goatastronaut0212 = {
+      isNormalUser = true;
+      description = "goatatronaut0212";
+      extraGroups = [
+        "audio"
+        "docker"
+        "input"
+        "libvirtd"
+        "networkmanager"
+        "video"
+        "wheel"
+      ];
+      packages = [
+        # Development
+        pkgs.drawio
+        pkgs.joplin-desktop
+        pkgs.libreoffice
+
+        # Icons
+        pkgs.papirus-icon-theme
+
+        # Internet
+        pkgs.brave
+        pkgs.microsoft-edge       # Microsoft proprietary browser
+        pkgs.qutebrowser          # vim web qtwebengine browser
+
+        # Tools
+        pkgs.bottom               # terminal system tool
+        pkgs.cmus                 # Music terminal
+        pkgs.fastfetch            # Fetch system tools
+        pkgs.fuzzel               # Menu
+        pkgs.lsd                  # ls with icons
+        pkgs.pavucontrol          # Audio control
+        pkgs.pcmanfm-qt           # File manager
+        pkgs.powerline-go         # Powerline with icons
+        pkgs.mako                 # Wayland notification
+        pkgs.networkmanagerapplet # Network manager tray
+        pkgs.nwg-look             # GTK apperance settings
+        pkgs.swww                 # Image
+        pkgs.waybar               # Wayland status bar
+        pkgs.wezterm              # Terminal
+        pkgs.xwayland-satellite   # For Xorg apps in niri
+      ] ++ [
+        unstable-pkgs.dbeaver-bin
+        unstable-pkgs.code-cursor
+        unstable-pkgs.legcord
+      ] ++ [
+        inputs.nixvim.packages."${system}".default
+      ];
+    };
+    astronaut = {
     isNormalUser = true;
     description = "astronaut";
     extraGroups = [
@@ -25,15 +73,9 @@
       pkgs.drawio
       pkgs.joplin-desktop
       pkgs.krita
-      pkgs.libreoffice
-      inputs.nixvim.packages."${system}".default
-
-      # Games
-      pkgs.prismlauncher
 
       # Internet
       pkgs.brave
-      unstable-pkgs.caprine
       pkgs.legcord
       pkgs.element-desktop  # Matrix client
       pkgs.qutebrowser
@@ -52,13 +94,10 @@
       pkgs.foot
       pkgs.jq
       pkgs.pulsemixer
-      pkgs.rofi
-      pkgs.pavucontrol
       pkgs.networkmanagerapplet
       pkgs.nwg-look
       pkgs.mako
       pkgs.pcmanfm-qt
-      #remotegamepad
       pkgs.swww               # Image
       pkgs.xwayland-satellite # For Xorg apps in niri
 
@@ -79,5 +118,6 @@
       # Windows
       pkgs.wineWowPackages.stable
     ];
+    };
   };
 }
