@@ -16,6 +16,7 @@
       ];
       packages = [
         # Development
+        pkgs.dbeaver-bin
         pkgs.drawio
         pkgs.joplin-desktop
         pkgs.libreoffice
@@ -45,7 +46,6 @@
         pkgs.wezterm              # Terminal
         pkgs.xwayland-satellite   # For Xorg apps in niri
       ] ++ [
-        unstable-pkgs.dbeaver-bin
         unstable-pkgs.code-cursor
         unstable-pkgs.legcord
       ] ++ [
