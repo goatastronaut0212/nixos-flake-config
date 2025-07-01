@@ -29,7 +29,6 @@
     let
       inherit (self) outputs;
 
-      # Config settings
       system = "x86_64-linux";
 
       unstable-pkgs = import nixpkgs-unstable {
