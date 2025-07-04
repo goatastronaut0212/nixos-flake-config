@@ -20,6 +20,7 @@
         pkgs.drawio
         pkgs.joplin-desktop
         pkgs.libreoffice
+        pkgs.obs-studio
 
         # Icons
         pkgs.papirus-icon-theme
@@ -47,6 +48,7 @@
         pkgs.xwayland-satellite   # For Xorg apps in niri
       ] ++ [
         unstable-pkgs.code-cursor
+        unstable-pkgs.protonvpn-gui
         unstable-pkgs.legcord
       ] ++ [
         inputs.nixvim.packages."${system}".default
