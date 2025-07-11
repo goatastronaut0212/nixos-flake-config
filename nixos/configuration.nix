@@ -46,6 +46,21 @@
   ];
 
   nixpkgs = {
+    overlays = [
+        (final: prev:
+      {
+        dqlite = prev.dqlite.overrideAttrs (old: {
+          patches = (old.patches or []) ++ [
+            (prev.fetchpatch {
+              url = "https://github.com/canonical/dqlite/commit/be453628ce782167f6652c055e600908e2641da7.patch?full_index=1";
+              hash = "sha256-5DvZ1TW6QmE/heh/RjV395gSgwKM5XnqxqznfYQPC/Y=";
+            })  
+          ];
+        });
+      }   
+    )
+    ];
+
     # Configure your nixpkgs instance
     config = { allowUnfree = true; };
   };
