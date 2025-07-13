@@ -1,18 +1,16 @@
-{ pkgs, ... }:
 
 {
   # Enable sound with pipewire.
-  services.pulseaudio = {
-    enable = false;
-    support32Bit = true;    ## If compatibility with 32-bit applications is desired.
-    package = pkgs.pulseaudioFull;
-  };
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
+    audio.enable = true;
+    alsa = {
+      enable = true;
+      support32Bit = true;
+    };
     pulse.enable = true;
+    #systemWide = true;
     wireplumber.enable = true;
   };
 
