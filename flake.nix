@@ -10,8 +10,8 @@
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
 
-    ags = {
-      url = "github:aylur/ags";
+    home-manager = {
+      url = "github:nix-community/home-manager/release-25.05";
     };
 
     nixvim = {
@@ -23,7 +23,7 @@
     self,
     nixpkgs,
     nixpkgs-unstable,
-    ags,
+    home-manager,
     nixvim
   }@inputs:
     let
@@ -36,6 +36,8 @@
         config.allowUnfree = true;
       };
     in {
+      overlays = import ./overlays;
+
       nixosConfigurations = {
         nixos-dell = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs unstable-pkgs system; };
@@ -43,6 +45,12 @@
           modules = [
             # My configuration
             ./nixos/configuration.nix
+
+            home-manager.nixosModules.home-manager {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.goatastronaut0212 = import ./home/home.nix;
+            }
           ];
         };
       };

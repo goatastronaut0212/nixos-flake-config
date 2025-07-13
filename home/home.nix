@@ -1,9 +1,9 @@
 {
   home = {
-    username = "astronaut";
-    homeDirectory = "/home/astronaut";
+    username = "goatastronaut0212";
+    homeDirectory = "/home/goatastronaut0212";
 
-    stateVersion = "24.11";
+    stateVersion = "25.05";
   };
 
   imports = [
