@@ -1,11 +1,7 @@
 {
   services.xserver = {
     displayManager = {
-      startx.enable = false;
+      startx.enable = true;
     };
-  };
-  services = {
-    desktopManager.plasma6.enable = true;
-    displayManager.sddm.enable = true;
   };
 }
