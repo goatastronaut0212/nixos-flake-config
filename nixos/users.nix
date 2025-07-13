@@ -16,6 +16,7 @@
       ];
       packages = [
         # Development
+        pkgs.bruno
         pkgs.dbeaver-bin
         pkgs.drawio
         pkgs.joplin-desktop
@@ -47,7 +48,7 @@
         pkgs.wezterm              # Terminal
         pkgs.xwayland-satellite   # For Xorg apps in niri
       ] ++ [
-        unstable-pkgs.code-cursor
+        unstable-pkgs.code-cursor-fhs
         unstable-pkgs.protonvpn-gui
         unstable-pkgs.legcord
       ] ++ [
