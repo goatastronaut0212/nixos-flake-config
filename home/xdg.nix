@@ -1,7 +1,7 @@
 {
-  home.xdg.mimeApps = {
+  xdg.mimeApps = {
     enable = true;
-    defaultApplications = {
+    associations.added = {
       "inode/directory" = ["pcmanfm.desktop"];
     };
   };
