@@ -44,9 +44,11 @@
         pkgs.networkmanagerapplet # Network manager tray
         pkgs.nwg-look             # GTK apperance settings
         pkgs.swww                 # Image
+        pkgs.termusic             # Terminal Rust music player
         pkgs.waybar               # Wayland status bar
         pkgs.wezterm              # Terminal
         pkgs.xwayland-satellite   # For Xorg apps in niri
+        pkgs.yazi
       ] ++ [
         unstable-pkgs.code-cursor-fhs
         unstable-pkgs.protonvpn-gui
